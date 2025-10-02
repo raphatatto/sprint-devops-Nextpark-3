@@ -1,9 +1,5 @@
 #  NextPark – Sprint 3 (Java Advanced + DevOps)
 
-## Conclusão
- Professor, boa noite nao conseguimos efetuar o deploy tentamos tanto em java como em .NET, acima esta o exemplo dos scripts que estavamos utizando. Acredito que a maior dificuldade que enfretamos foi na questão do banco porque em java e .Net utilizamos o b
- banco da FIAP e em na sua máteria tinha que ser em nuvem ai eu pensei em deixar o da fiap para utilizar local e o em nuvem para produção, mas nao deu certo.A segunda opção era so utilizar o SQL server e remover o da FIAP, mas começou a dar erro na aplicação de java que ja estava tudo certo e o deploy ficava tbm so st. Conseguimos criar os grupos de recursos banco, app service, mas o que nao deu mesmo foi o deploy. Peço desculpas desde já e na próxima sprint vamos com tudo!!
-##  Integrantes
 
 | Nome | RM | Função |
 |------|----|--------|
@@ -12,6 +8,29 @@
 
 ---
 
+
+## Dificuladades no Deploy
+Professor, boa noite.
+
+Não conseguimos efetuar o deploy, apesar de termos tentado tanto em Java quanto em .NET.
+Abaixo está o exemplo dos scripts que estávamos utilizando.
+
+Acredito que a maior dificuldade que enfrentamos foi em relação ao banco de dados, pois nas aplicações em Java e .NET utilizamos o banco da FIAP, enquanto na sua matéria era necessário utilizar um banco na nuvem.
+
+Chegamos a considerar duas alternativas:
+
+- Manter o banco da FIAP para uso local e configurar o banco em nuvem apenas para produção;
+
+- Ou remover completamente o banco da FIAP e utilizar somente o SQL Server em nuvem.
+
+Infelizmente, ao tentar a segunda opção, a aplicação Java — que já estava funcionando corretamente — começou a apresentar erros, e o deploy também não concluía, ficando apenas no status “starting”.
+
+Apesar disso, conseguimos criar os grupos de recursos, o banco de dados e o App Service no Azure, mas não conseguimos finalizar o deploy.
+
+Pedimos desculpas por não ter sido possível concluir nesta sprint.
+Na próxima entrega vamos nos preparar melhor e garantir que tudo esteja funcionando!
+
+---
 ##  Scripts de Deploy – Azure CLI
 
 ```bash
@@ -102,13 +121,7 @@ CREATE TABLE HIST_MOV (
 ```
 
 
-##  Diagramas
-
-> Inclua aqui os diagramas de arquitetura e de banco de dados utilizados no projeto (imagens em `/docs/diagramas/`).
-
-- **Diagrama de Arquitetura**: mostra App Java, App Service, Azure SQL e GitHub Actions.
-- **DER**: relacionamentos entre USUARIOS, VAGAS, MOTOS, HIST_MOV.
-
----
-
+![Texto alternativo](https://github.com/raphatatto/sprint-devops-Nextpark-3/blob/main/img1.png)
+![Texto alternativo](https://github.com/raphatatto/sprint-devops-Nextpark-3/blob/main/img2.png)
+![Texto alternativo](https://github.com/raphatatto/sprint-devops-Nextpark-3/blob/main/img3.png)
 
